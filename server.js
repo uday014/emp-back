@@ -3,6 +3,9 @@ const mongoose = require("./db");
 const bodyparser = require("body-parser");
 var emproute = require("./Routes/emproute");
 var app = express();
+const cors = require("cors");
+
+app.use(cors());
 
 var Router = express.Router();
 
