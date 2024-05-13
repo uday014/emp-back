@@ -69,7 +69,6 @@ const Login = (req, res) => {
 };
 
 const editUser = (req, res) => {
-  console.log("hellllllllll");
   Emp.findByIdAndUpdate(
     req.params.id,
     {
